@@ -1,5 +1,5 @@
-from producto import producto
+from Product import Product
 
-p = producto("10","yuca",1200)
+p = Product("10","yuca",1200)
 
 print(p)
