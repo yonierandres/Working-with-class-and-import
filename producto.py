@@ -1,17 +1,17 @@
 
 class producto:
     def __init__(self, codigo, nombre, precio):
-        self.codigo = codigo
+        self.codigo = str(codigo)
         self.nombre = nombre
         self.precio = precio
-        self.iva = 0.19
-        self.stock = 0
+        self.iva = str(0.19)
+        self.stock = str(0)
         
     def __str__(self):
-        datos = ("codigo: "+ self.codigo +"/n"
-                +"nombre: "+ self.nombre +"/n"
-                +"precio: "+ self.precio +"/n"
-                +"iva: "+ self.iva +"/n"
-                +"inventario: "+self.stock
+        datos = ("codigo: "+self.codigo+"/n"
+                +"nombre: "+self.nombre+"/n"
+                +"precio: "+str(self.precio)+"/n"
+                +"iva: "+str(self.iva)+"/n"
+                +"inventario: "+str(self.stock)
                 )
         return datos
